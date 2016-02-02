@@ -1,0 +1,40 @@
+{
+  "name": "Limix (Beta)",
+  "short_name": "Limix",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "",
+  "icons": {
+    "16": "images/ic_logoo.png",
+    "128": "images/ic_logoo.png"
+  },
+
+  "browser_action": {
+    "default_icon": "images/ic_logoo.png",
+    "default_popup": "html/popup.html"
+  },
+
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "vendor/jquery/dist/jquery.min.js",
+      "scripts/background.js",
+      "scripts/reload.js"
+    ]
+  },
+
+  "chrome_url_overrides":{
+        "newtab" : "index.html"
+    },
+
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "webRequestBlocking"
+  ],
+  "web_accessible_resources": [
+    "style/main.css"
+  ]
+}

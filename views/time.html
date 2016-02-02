@@ -1,0 +1,25 @@
+<div class="index-bg valign-wrapper time-page">
+  <div class="col s12 m12">
+    <div class="card card-index">
+      <div class="card-content ">
+        <span class="card-title black-text">SET PRODUCTIVE TIME</span>
+        <div class="row">
+          <form class="col s12">
+            <p class="range-field">Start Time :
+              <span ng-bind-template="{{start}}.00"></span>
+              <input type="range" id="test5" min="0.00" ng-model="start" max="24.00" />
+            </p>
+            <p class="range-field">End Time :
+              <span ng-bind-template="{{end}}.00"></span>
+              <input type="range" id="test5" min="0" ng-model="end" max="24" />
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="card-action">
+        <button class="btn green " ng-click="addStorage()">Add</button>
+        <input type="reset" value="Reset" class="btn red">
+      </div>
+    </div>
+  </div>
+</div>

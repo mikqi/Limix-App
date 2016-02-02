@@ -1,0 +1,59 @@
+<!doctype html>
+<html ng-app="Limix" ng-csp>
+
+  <head>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="vendor/materialize/dist/css/materialize.min.css">
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+    <title>Limix</title>
+  </head>
+
+  <body class="index" style="background: url(/images/bg/bg-{{random}}.jpg) center center no-repeat" ng-controller="mainCtrl">
+    <div class="overlay"></div>
+    <!-- FAB -->
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating waves-effect waves-light  btn-large red" href="#/">
+      <i class="large mdi-navigation-menu"></i>
+    </a>
+      <ul>
+        <li>
+          <a href="#/table" class="btn-floating waves-effect waves-light  purple tooltipped" data-position="left" data-delay="0" data-tooltip="Chart"><i class="large mdi-image-grid-on"></i></a>
+        </li>
+        <li>
+          <a href="#/time" class="btn-floating waves-effect waves-light  green darken-1 tooltipped" data-position="left" data-delay="0" data-tooltip="Set Time"><i class="large mdi-action-alarm"></i></a>
+        </li>
+        <li>
+          <a href="#/add" class="btn-floating waves-effect waves-light  orange darken-1 tooltipped" data-position="left" data-delay="0" data-tooltip="Add New"><i class="large mdi-content-add"></i></a>
+        </li>
+        <li>
+          <a href="#/" class="btn-floating waves-effect waves-light  cyan darken-1 tooltipped" data-position="left" data-delay="0" data-tooltip="Home"><i class="large mdi-action-home"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- END FAB -->
+    <div class="page {{pageClass}}" ng-view></div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/firebase/firebase.js"></script>
+    <script src="vendor/angularfire/dist/angularfire.js"></script>
+    <script src="vendor/materialize/bin/materialize.js"></script>
+    <script src="vendor/materialize/dist/js/materialtag.min.js"></script>
+
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+
+    <script src="app/app.js"></script>
+    <script type="text/javascript" src="scripts/reload.js"></script>
+
+    <!-- endbuild -->
+  </body>
+
+</html>

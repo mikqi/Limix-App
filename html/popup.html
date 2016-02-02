@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <title>Limix (Beta)</title>
+  <link rel="stylesheet" href="../vendor/materialize/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <style>
+    body {
+      height: 200px;
+      width: 400px;
+      background-color: #C5292A;
+      font-size: 14px;
+    }
+
+    .logo {
+      transition: ease .3s;
+    }
+
+    .logo:hover {
+      transform: rotate(40deg);
+      transition: ease .3s;
+    }
+
+    .title {
+      margin: 0;
+      margin-top: -20px;
+      color: #f5f5f5;
+      font-size: 3.5em;
+      text-shadow: 0 0 5px #FFFFFF;
+      transition: ease .5s;
+    }
+
+    .title:hover {
+      text-shadow: 0 0 15px #FFFFFF;
+      transition: ease .5s;
+    }
+  </style>
+</head>
+
+<body class="">
+  <div class="container">
+    <div class="row center-align">
+      <img class="logo" src="../images/ic_logoo.png" width="150px" alt="">
+      <h2 class="title">LIMIX</h2>
+    </div>
+    <div class="row card-panel">
+      <div class="input-field col s12">
+        <input id="name" type="text" class="validate">
+        <label for="name">Name</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="tag" data-role="materialtags" type="text" class="validate">
+        <label for="tag">Tag</label>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn green lighten-1 waves-effect waves-light " id="add" style="width:100%">block this site</button>
+    </div>
+  </div>
+  <script src="../vendor/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/popup.js"></script>
+  <script type="text/javascript" src="../scripts/reload.js"></script>
+  <script src="../vendor/materialize/bin/materialize.js"></script>
+  <script src="../vendor/materialize/dist/js/materialtag.min.js"></script>
+</body>
+
+</html>
